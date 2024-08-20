@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        body{
+            background-color: #f4f4f4;
+            padding: 20px;
+            width: 100vw;
+            height:100vh;
+
+        }
+        h1{
+            text-transform: uppercase;
+            color: gray;
+        }
+        form{
+            max-width: 500px;
+            box-shadow: 0px 0px 10px rgb(0, 0, 0,0.1);
+            padding: 20px;
+            border-radius: 5px;
+            margin: auto;
+        }
+        input{
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+            box-shadow: 0px 0px 10px rgb(0, 0, 0,0.3);
+            padding: 8px;
+            margin-bottom: 12px;
+        }
+        label{
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+
+        }
+        button{
+            background-color: #007bff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+            margin-right: 10px;
+            cursor: pointer;
+            text-transform: capitalize;
+
+        }
+        button:hover{
+            background-color: #0056b3;
+
+        }
+        input:focus-visible{
+            /* border: none; */
+            box-shadow: none;
+            outline: none;
+        }
+
+        h2{
+            color: #333;
+            text-transform: capitalize;
+
+        }
+        #output{
+            box-shadow: 0px 0px 10px rgb(0, 0, 0,.1);
+            max-width: 500px;
+            padding: 18px;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            margin: auto;
+        }
+        #output strong{
+        color: blue;
+        }
+        #output img{
+            max-width: 100%;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Fill Form
+    </h1>
+    <form  id="myform">
+        <label for="name" >Name:</label>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="age" >Age</label>
+        <input type="number" id="age" name="age"><br>
+
+        <label for="telephone" >Telephone:</label>
+        <input type="tel" id="telephone" name="telephone"><br>
+
+        <label for="email" >Email:</label>
+        <input type="email" id="email" name="email"><br>
+
+        
+
+        <button type="button" onclick="showInfo()">submit</button>
+         
+
+
+         
+    </form>
+
+    <h2>
+        entered Information
+    </h2>
+    <p id="output">
+
+    </p>
+
+    <script src="main.js"></script>
+</body>
+</html>
